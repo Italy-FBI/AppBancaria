@@ -1,62 +1,59 @@
 import flet as ft
-from VerificaUtente import verificaUtente
 import json
-from Home import homepage
-from log import *
 
 filePathInfo = "InfoAccounts.json"
 filePathCredenziali = "CredenzialiAccounts.json"
 
+# Carica i dati info dal file
 def caricaDatiInfo():
     with open(filePathInfo, 'r') as f:
         return json.load(f)
-
+    
 def salvaDatiInfo(dati):
     with open(filePathInfo, 'w') as f:
         json.dump(dati, f, indent=4)
 
-def aggiungiUtenteInfo(nome, cognome, saldo):
-        dati = caricaDatiInfo()  # Carica i dati esistenti
-        ultimo_id = max(user['id'] for user in dati) if dati else -1
-        nuovo_id = ultimo_id + 1
 
-        nuovo_utente = {
-            "id": nuovo_id,
-            "nome": nome,
-            "cognome": cognome,
-            "saldo": saldo
-        }
-        dati.append(nuovo_utente)  # Aggiungi il nuovo utente
-        salvaDatiInfo(dati)
+def aggiungiUtenteInfo(nome, cognome, saldo):
+    dati = caricaDatiInfo()
+    ultimo_id = max(int(user['id']) for user in dati) if dati else -1
+    nuovo_id = ultimo_id + 1
+
+    nuovo_utente = {
+        "id": nuovo_id,
+        "nome": nome,
+        "cognome": cognome,
+        "saldo": saldo
+    }
+    dati.append(nuovo_utente)
+    salvaDatiInfo(dati)
 
 def caricaDatiCredenziali():
-    with open(filePathInfo, 'r') as f:
+    with open(filePathCredenziali, 'r') as f:
         return json.load(f)
 
 def salvaDatiCredenziali(dati):
-    with open(filePathInfo, 'w') as f:
+    with open(filePathCredenziali, 'w') as f:
         json.dump(dati, f, indent=4)
 
-def aggiungiUtenteCredenziali(nome, cognome, saldo):
-        dati = caricaDatiInfo()  # Carica i dati esistenti
-        ultimo_id = max(user['id'] for user in dati) if dati else -1
-        nuovo_id = ultimo_id + 1
+def aggiungiUtenteCredenziali(username, password):
+    dati = caricaDatiCredenziali()
+    ultimo_id = max(int(user['id']) for user in dati) if dati else -1
+    nuovo_id = ultimo_id + 1
 
-        nuovo_utente = {
-            "id": nuovo_id,
-            "nome": nome,
-            "cognome": cognome,
-            "saldo": saldo
-        }
-        dati.append(nuovo_utente)  # Aggiungi il nuovo utente
-        salvaDatiInfo(dati)
+    nuovo_utente = {
+        "id": nuovo_id,
+        "username": username,
+        "password": password
+    }
+    dati.append(nuovo_utente)
+    salvaDatiCredenziali(dati)  
 
 def newAccount(page: ft.Page):
 
     def verificaCampiVuoti():
         print("Controllo i campi vuoti")
         registrazione = True
-        # Nascondi i messaggi di errore all'inizio
         nomeNonInserito.visible = False
         cognomeNonInserito.visible = False
         usernameNonInserito.visible = False
@@ -78,34 +75,35 @@ def newAccount(page: ft.Page):
         page.update()
         return registrazione
     
-    def verificaDati(e):  # Il parametro e è necessario perché on_click passa l'evento
-        if not verificaCampiVuoti():  # Chiama la funzione correttamente
+    def verificaDati(e):
+        if not verificaCampiVuoti():
             return False
-        else:  # Verifica le credenziali
+        else:
             creazioneAccount = True
             passwordCorta.visible = False
-            
+            print("Controllo lunghezza password...")
             if len(password.value) < 8:
                 passwordCorta.visible = True
                 creazioneAccount = False
+                print("* ERROR  Password troppo corta")
                 page.update()
-
+            
+            print("Controllo username...")
             with open(filePathCredenziali , "r") as f:
                 data = json.load(f)
                 for account in data:
                     if username.value == account["username"]:
                         usernameEsistente.visible = True
                         creazioneAccount = False
+                        print("* ERROR  Username gia in uso")
             page.update()
             if creazioneAccount:
-                aggiungiUtenteInfo(nome.value, cognome.value, 00.00)
-                caricaDatiInfo()
+                aggiungiUtenteInfo(nome.value, cognome.value, 0.00)
                 print("Dati Info Caricati...")
                 aggiungiUtenteCredenziali(username.value, password.value)
-                caricaDatiCredenziali()
                 print("Dati Credenziali Caricati")
-                # Completare la registrazione e salvare i dati
-
+                
+    #messaggi di errore
     nomeNonInserito = ft.Text("Nome non inserito", color="red", visible=False)
     cognomeNonInserito = ft.Text("*Cognome non inserito", color="red", visible=False)
     usernameNonInserito = ft.Text("*Username non inserito", color="red", visible=False)
@@ -119,12 +117,16 @@ def newAccount(page: ft.Page):
     cognome = ft.TextField(label="Inserisci il tuo cognome")
     username = ft.TextField(label="Inserisci un username")
     password = ft.TextField(label="Inserisci una password", password=True)
-    
-    # Passa il riferimento alla funzione verificaDati senza eseguirla
+
     registrati = ft.ElevatedButton("Registrati", on_click=verificaDati)  
-    
+    #elementi pagina
     controlli = ft.Column(controls=[
-        a,b,nome,nomeNonInserito,cognome,cognomeNonInserito,username,usernameNonInserito,usernameEsistente,password,passwordNonInserita, passwordCorta,registrati
+        a,b,
+        nome,nomeNonInserito,
+        cognome,cognomeNonInserito,
+        username,usernameNonInserito,usernameEsistente,
+        password,passwordNonInserita, passwordCorta,
+        registrati
     ])
 
     page.add(controlli)

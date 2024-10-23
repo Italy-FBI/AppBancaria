@@ -1,20 +1,26 @@
 [
     {
-        "id" : "0",
-        "nome":"admin",
+        "id": "0",
+        "nome": "admin",
         "cognome": "admin",
         "saldo": 0.0
     },
     {
-        "id":1,
-        "nome":"mario.rossi",
-        "cognome":"mario123.",
-        "saldo": 1200.00
+        "id": 1,
+        "nome": "mario.rossi",
+        "cognome": "mario123.",
+        "saldo": 1200.0
     },
     {
-        "id":2,
-        "nome":"Andrea",
-        "cognome":"Martini",
+        "id": 2,
+        "nome": "Andrea",
+        "cognome": "Martini",
         "saldo": 13200.57
+    },
+    {
+        "id": 3,
+        "nome": "simone",
+        "cognome": "martini",
+        "saldo": 0.0
     }
 ]
