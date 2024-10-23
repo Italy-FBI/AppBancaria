@@ -1,6 +1,6 @@
 import json
 from VerificaUtente import getIdUtente
-with open("InfoAccounts.json", "r") as f:
+with open("C:\\Users\\Informatica\\Documents\\martini 4D\\AppBancaria-main\\AppBancaria-main\\InfoAccounts.json", "r") as f:
     data = json.load(f)
 
 id = 0
