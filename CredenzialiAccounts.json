@@ -18,5 +18,20 @@
         "id": 3,
         "username": "simone.martini",
         "password": "simone123."
+    },
+    {
+        "id": 4,
+        "username": "manuel.ronca",
+        "password": "manuel17"
+    },
+    {
+        "id": 5,
+        "username": "sfeww",
+        "password": "wefewfew"
+    },
+    {
+        "id": 6,
+        "username": "marco61",
+        "password": "marco1971"
     }
 ]

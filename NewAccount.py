@@ -1,5 +1,7 @@
 import flet as ft
 import json
+import time
+
 
 filePathInfo = "InfoAccounts.json"
 filePathCredenziali = "CredenzialiAccounts.json"
@@ -50,7 +52,7 @@ def aggiungiUtenteCredenziali(username, password):
     salvaDatiCredenziali(dati)  
 
 def newAccount(page: ft.Page):
-
+    page.clean()
     def verificaCampiVuoti():
         print("Controllo i campi vuoti")
         registrazione = True
@@ -102,6 +104,21 @@ def newAccount(page: ft.Page):
                 print("Dati Info Caricati...")
                 aggiungiUtenteCredenziali(username.value, password.value)
                 print("Dati Credenziali Caricati")
+                nome.value = ""
+                cognome.value = ""
+                username.value = ""
+                password.value = ""
+                accountCreato = ft.Text(f"Account Creato!!! \n Verrai reindirizzato alla pagina di login tra... {5} secondi", color="Green")
+                page.add(accountCreato)
+                for i in range(5, -1, -1):
+                    accountCreato.value = f"Account Creato!!! \n Verrai reindirizzato alla pagina di login tra... {i} secondi"
+                    page.update()
+                    time.sleep(1)
+                from Login import login
+                login(page)
+                
+                
+
                 
     #messaggi di errore
     nomeNonInserito = ft.Text("Nome non inserito", color="red", visible=False)
@@ -111,7 +128,6 @@ def newAccount(page: ft.Page):
     passwordNonInserita = ft.Text("*Password non inserita", color="red", visible=False)
     passwordCorta = ft.Text("*Password più corta di 8 caratteri", color="red", visible=False)
 
-    a = ft.Text("Non hai un account... Creane uno!!!")
     b = ft.Text("Inserisci i dati per la Registrazione")
     nome = ft.TextField(label="inserisci il tuo nome")
     cognome = ft.TextField(label="Inserisci il tuo cognome")
@@ -121,7 +137,7 @@ def newAccount(page: ft.Page):
     registrati = ft.ElevatedButton("Registrati", on_click=verificaDati)  
     #elementi pagina
     controlli = ft.Column(controls=[
-        a,b,
+        b,
         nome,nomeNonInserito,
         cognome,cognomeNonInserito,
         username,usernameNonInserito,usernameEsistente,
@@ -135,6 +151,3 @@ def newAccount(page: ft.Page):
     page.theme_mode = ft.ThemeMode.SYSTEM
     page.title = "New Account"
     page.update()
-
-# Da rimuovere
-ft.app(target=newAccount)
