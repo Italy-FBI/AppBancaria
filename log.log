@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 2024-10-23 17:41:30,330 - DEBUG - Using proactor: IocpProactor
 2024-10-23 17:41:30,332 - INFO - Assets path configured: C:\Users\zonzi\Documents\GitHub\AppBancaria\assets
 2024-10-23 17:41:30,639 - INFO - Starting Flet web server on port 8551...
 2024-10-23 17:41:30,639 - INFO - Web renderer configured: WebRenderer.CANVAS_KIT
 2024-10-23 17:41:30,639 - INFO - Use color emoji: False
 2024-10-23 17:41:30,639 - INFO - Route URL strategy configured: path
+=======
+
+>>>>>>> 17adb2c2dbd0992a8413e0914595ba4ec36e6f6d
