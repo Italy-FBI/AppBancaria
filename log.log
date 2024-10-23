@@ -1,0 +1,177 @@
+2024-10-23 16:10:09,563 - DEBUG - Using proactor: IocpProactor
+2024-10-23 16:10:09,578 - INFO - Assets path configured: C:\Users\zonzi\Documents\GitHub\AppBancaria\assets
+2024-10-23 16:10:09,578 - DEBUG - Creating new PubSubHub instance
+2024-10-23 16:10:09,578 - DEBUG - Creating new PubSubHub instance
+2024-10-23 16:10:09,578 - INFO - Starting up TCP server on localhost:60395
+2024-10-23 16:10:09,595 - INFO - Flet app has started...
+2024-10-23 16:10:09,595 - INFO - App URL: tcp://localhost:60395
+2024-10-23 16:10:09,595 - INFO - Starting Flet View app...
+2024-10-23 16:10:09,595 - INFO - Flet View found in: C:\Users\zonzi\AppData\Local\Programs\Python\Python312\Lib\site-packages\flet\bin\flet\flet.exe
+2024-10-23 16:10:10,049 - DEBUG - Connected new TCP client
+2024-10-23 16:10:10,050 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1265.6","pageHeight":"682.4","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"9.6","windowLeft":"9.6","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"dark","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2024-10-23 16:10:10,051 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1265.6","height":"682.4","windowwidth":"1280.0","windowheight":"720.0","windowtop":"9.6","windowleft":"9.6","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"dark","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2024-10-23 16:10:10,051 - DEBUG - _process_command: get ['page', 'route'] {}
+2024-10-23 16:10:10,051 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2024-10-23 16:10:10,051 - DEBUG - _process_command: get ['page', 'web'] {}
+2024-10-23 16:10:10,052 - DEBUG - _process_command: get ['page', 'debug'] {}
+2024-10-23 16:10:10,052 - DEBUG - _process_command: get ['page', 'platform'] {}
+2024-10-23 16:10:10,052 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2024-10-23 16:10:10,052 - DEBUG - _process_command: get ['page', 'media'] {}
+2024-10-23 16:10:10,052 - DEBUG - _process_command: get ['page', 'width'] {}
+2024-10-23 16:10:10,052 - DEBUG - _process_command: get ['page', 'height'] {}
+2024-10-23 16:10:10,052 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2024-10-23 16:10:10,052 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2024-10-23 16:10:10,052 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2024-10-23 16:10:10,052 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2024-10-23 16:10:10,052 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2024-10-23 16:10:10,052 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2024-10-23 16:10:10,052 - INFO - App session started
+2024-10-23 16:10:10,054 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2024-10-23 16:10:10,054 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2024-10-23 16:10:10,054 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"column","i":"_2","p":"_1","c":["_3","_4","_5","_6","_7","_8","_9","_10","_11","_12","_13","_14","_15"]},{"t":"text","i":"_3","p":"_2","c":[],"value":"Non hai un account... Creane uno!!!"},{"t":"text","i":"_4","p":"_2","c":[],"value":"Inserisci i dati per la Registrazione"},{"t":"textfield","i":"_5","p":"_2","c":[],"label":"inserisci il tuo nome"},{"t":"text","i":"_6","p":"_2","c":[],"color":"red","value":"Nome non inserito","visible":"false"},{"t":"textfield","i":"_7","p":"_2","c":[],"label":"Inserisci il tuo cognome"},{"t":"text","i":"_8","p":"_2","c":[],"color":"red","value":"*Cognome non inserito","visible":"false"},{"t":"textfield","i":"_9","p":"_2","c":[],"label":"Inserisci un username"},{"t":"text","i":"_10","p":"_2","c":[],"color":"red","value":"*Username non inserito","visible":"false"},{"t":"text","i":"_11","p":"_2","c":[],"color":"red","value":"*Username gi\u00e0 utilizzato","visible":"false"},{"t":"textfield","i":"_12","p":"_2","c":[],"label":"Inserisci una password","password":"true"},{"t":"text","i":"_13","p":"_2","c":[],"color":"red","value":"*Password non inserita","visible":"false"},{"t":"text","i":"_14","p":"_2","c":[],"color":"red","value":"*Password pi\u00f9 corta di 8 caratteri","visible":"false"},{"t":"elevatedbutton","i":"_15","p":"_2","c":[],"text":"Registrati"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_16","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2024-10-23 16:10:10,055 - DEBUG - sent to TCP: 602
+2024-10-23 16:10:10,056 - DEBUG - _process_command: set ['page'] {'thememode': 'system', 'title': 'New Account'}
+2024-10-23 16:10:10,058 - DEBUG - sent to TCP: 1599
+2024-10-23 16:10:10,058 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","thememode":"system","title":"New Account"}]}}]}
+2024-10-23 16:10:10,060 - DEBUG - sent to TCP: 156
+2024-10-23 16:10:10,244 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-10-23 16:10:10,244 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-10-23 16:10:10,272 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"9.6","windowleft":"9.6","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]}}
+2024-10-23 16:10:10,273 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"9.6","windowleft":"9.6","windowminimized":"false","windowmaximized":"false","windowfocused":"false","windowfullscreen":"false"}]
+2024-10-23 16:10:10,275 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"blur"}}
+2024-10-23 16:10:10,276 - DEBUG - page.on_event_async: page window_event blur
+2024-10-23 16:10:11,305 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"resume"}}
+2024-10-23 16:10:11,305 - DEBUG - page.on_event_async: page app_lifecycle_state_change resume
+2024-10-23 16:10:11,329 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"9.6","windowleft":"9.6","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2024-10-23 16:10:11,331 - DEBUG - page.on_event_async: page change [{"i":"page","windowwidth":"1280.0","windowheight":"720.0","windowtop":"9.6","windowleft":"9.6","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2024-10-23 16:10:11,331 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"window_event","eventData":"focus"}}
+2024-10-23 16:10:11,331 - DEBUG - page.on_event_async: page window_event focus
+2024-10-23 16:10:12,693 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_15","eventName":"click","eventData":""}}
+2024-10-23 16:10:12,693 - DEBUG - page.on_event_async: _15 click 
+2024-10-23 16:10:12,695 - DEBUG - _process_command: set ['_6'] {'visible': 'true'}
+2024-10-23 16:10:12,696 - DEBUG - _process_command: set ['_8'] {'visible': 'true'}
+2024-10-23 16:10:12,696 - DEBUG - _process_command: set ['_10'] {'visible': 'true'}
+2024-10-23 16:10:12,696 - DEBUG - _process_command: set ['_13'] {'visible': 'true'}
+2024-10-23 16:10:12,696 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"_6","visible":"true"}]}},{"action":"updateControlProps","payload":{"props":[{"i":"_8","visible":"true"}]}},{"action":"updateControlProps","payload":{"props":[{"i":"_10","visible":"true"}]}},{"action":"updateControlProps","payload":{"props":[{"i":"_13","visible":"true"}]}}]}
+2024-10-23 16:10:12,697 - DEBUG - sent to TCP: 376
+2024-10-23 16:10:14,934 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_5","eventName":"focus","eventData":""}}
+2024-10-23 16:10:14,935 - DEBUG - page.on_event_async: _5 focus 
+2024-10-23 16:10:15,411 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_5","value":"a"}]}}
+2024-10-23 16:10:15,411 - DEBUG - page.on_event_async: page change [{"i":"_5","value":"a"}]
+2024-10-23 16:10:15,415 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_5","value":"aq"}]}}
+2024-10-23 16:10:15,415 - DEBUG - page.on_event_async: page change [{"i":"_5","value":"aq"}]
+2024-10-23 16:10:15,488 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_5","value":"aqw"}]}}
+2024-10-23 16:10:15,489 - DEBUG - page.on_event_async: page change [{"i":"_5","value":"aqw"}]
+2024-10-23 16:10:15,578 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_5","value":"aqwd"}]}}
+2024-10-23 16:10:15,578 - DEBUG - page.on_event_async: page change [{"i":"_5","value":"aqwd"}]
+2024-10-23 16:10:16,255 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_5","eventName":"blur","eventData":""}}
+2024-10-23 16:10:16,255 - DEBUG - page.on_event_async: _5 blur 
+2024-10-23 16:10:16,333 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_15","eventName":"click","eventData":""}}
+2024-10-23 16:10:16,334 - DEBUG - page.on_event_async: _15 click 
+2024-10-23 16:10:16,336 - DEBUG - _process_command: set ['_6'] {'visible': 'false'}
+2024-10-23 16:10:16,336 - DEBUG - _process_command: set ['_8'] {'visible': 'true'}
+2024-10-23 16:10:16,336 - DEBUG - _process_command: set ['_10'] {'visible': 'true'}
+2024-10-23 16:10:16,336 - DEBUG - _process_command: set ['_13'] {'visible': 'true'}
+2024-10-23 16:10:16,337 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"_6","visible":"false"}]}},{"action":"updateControlProps","payload":{"props":[{"i":"_8","visible":"true"}]}},{"action":"updateControlProps","payload":{"props":[{"i":"_10","visible":"true"}]}},{"action":"updateControlProps","payload":{"props":[{"i":"_13","visible":"true"}]}}]}
+2024-10-23 16:10:16,338 - DEBUG - sent to TCP: 377
+2024-10-23 16:10:17,255 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_7","eventName":"focus","eventData":""}}
+2024-10-23 16:10:17,255 - DEBUG - page.on_event_async: _7 focus 
+2024-10-23 16:10:17,382 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_7","value":"a"}]}}
+2024-10-23 16:10:17,383 - DEBUG - page.on_event_async: page change [{"i":"_7","value":"a"}]
+2024-10-23 16:10:17,505 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_7","value":"ad"}]}}
+2024-10-23 16:10:17,506 - DEBUG - page.on_event_async: page change [{"i":"_7","value":"ad"}]
+2024-10-23 16:10:17,645 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_7","value":"ada"}]}}
+2024-10-23 16:10:17,647 - DEBUG - page.on_event_async: page change [{"i":"_7","value":"ada"}]
+2024-10-23 16:10:18,581 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_7","eventName":"blur","eventData":""}}
+2024-10-23 16:10:18,581 - DEBUG - page.on_event_async: _7 blur 
+2024-10-23 16:10:18,661 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_15","eventName":"click","eventData":""}}
+2024-10-23 16:10:18,661 - DEBUG - page.on_event_async: _15 click 
+2024-10-23 16:10:18,663 - DEBUG - _process_command: set ['_8'] {'visible': 'false'}
+2024-10-23 16:10:18,664 - DEBUG - _process_command: set ['_10'] {'visible': 'true'}
+2024-10-23 16:10:18,664 - DEBUG - _process_command: set ['_13'] {'visible': 'true'}
+2024-10-23 16:10:18,664 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"_8","visible":"false"}]}},{"action":"updateControlProps","payload":{"props":[{"i":"_10","visible":"true"}]}},{"action":"updateControlProps","payload":{"props":[{"i":"_13","visible":"true"}]}}]}
+2024-10-23 16:10:18,665 - DEBUG - sent to TCP: 295
+2024-10-23 16:10:19,213 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_9","eventName":"focus","eventData":""}}
+2024-10-23 16:10:19,213 - DEBUG - page.on_event_async: _9 focus 
+2024-10-23 16:10:19,377 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_9","value":"a"}]}}
+2024-10-23 16:10:19,378 - DEBUG - page.on_event_async: page change [{"i":"_9","value":"a"}]
+2024-10-23 16:10:19,494 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_9","value":"ad"}]}}
+2024-10-23 16:10:19,494 - DEBUG - page.on_event_async: page change [{"i":"_9","value":"ad"}]
+2024-10-23 16:10:19,615 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_9","value":"adw"}]}}
+2024-10-23 16:10:19,615 - DEBUG - page.on_event_async: page change [{"i":"_9","value":"adw"}]
+2024-10-23 16:10:19,679 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_9","value":"adwd"}]}}
+2024-10-23 16:10:19,679 - DEBUG - page.on_event_async: page change [{"i":"_9","value":"adwd"}]
+2024-10-23 16:10:20,173 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_9","eventName":"blur","eventData":""}}
+2024-10-23 16:10:20,173 - DEBUG - page.on_event_async: _9 blur 
+2024-10-23 16:10:20,260 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_15","eventName":"click","eventData":""}}
+2024-10-23 16:10:20,260 - DEBUG - page.on_event_async: _15 click 
+2024-10-23 16:10:20,262 - DEBUG - _process_command: set ['_10'] {'visible': 'false'}
+2024-10-23 16:10:20,262 - DEBUG - _process_command: set ['_13'] {'visible': 'true'}
+2024-10-23 16:10:20,263 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"_10","visible":"false"}]}},{"action":"updateControlProps","payload":{"props":[{"i":"_13","visible":"true"}]}}]}
+2024-10-23 16:10:20,263 - DEBUG - sent to TCP: 213
+2024-10-23 16:10:20,751 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_12","eventName":"focus","eventData":""}}
+2024-10-23 16:10:20,752 - DEBUG - page.on_event_async: _12 focus 
+2024-10-23 16:10:21,011 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_12","value":"a"}]}}
+2024-10-23 16:10:21,012 - DEBUG - page.on_event_async: page change [{"i":"_12","value":"a"}]
+2024-10-23 16:10:21,170 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_12","value":"ad"}]}}
+2024-10-23 16:10:21,171 - DEBUG - page.on_event_async: page change [{"i":"_12","value":"ad"}]
+2024-10-23 16:10:21,256 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_12","value":"ada"}]}}
+2024-10-23 16:10:21,256 - DEBUG - page.on_event_async: page change [{"i":"_12","value":"ada"}]
+2024-10-23 16:10:21,685 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_12","eventName":"blur","eventData":""}}
+2024-10-23 16:10:21,686 - DEBUG - page.on_event_async: _12 blur 
+2024-10-23 16:10:21,765 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_15","eventName":"click","eventData":""}}
+2024-10-23 16:10:21,765 - DEBUG - page.on_event_async: _15 click 
+2024-10-23 16:10:21,766 - DEBUG - _process_command: set ['_13'] {'visible': 'false'}
+2024-10-23 16:10:21,767 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"_13","visible":"false"}]}}]}
+2024-10-23 16:10:21,768 - DEBUG - _process_command: set ['_14'] {'visible': 'true'}
+2024-10-23 16:10:21,768 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"_14","visible":"true"}]}}]}
+2024-10-23 16:10:21,769 - DEBUG - sent to TCP: 130
+2024-10-23 16:10:21,769 - DEBUG - sent to TCP: 129
+2024-10-23 16:10:23,540 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_12","eventName":"focus","eventData":""}}
+2024-10-23 16:10:23,541 - DEBUG - page.on_event_async: _12 focus 
+2024-10-23 16:10:24,129 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_12","value":"adak"}]}}
+2024-10-23 16:10:24,129 - DEBUG - page.on_event_async: page change [{"i":"_12","value":"adak"}]
+2024-10-23 16:10:24,177 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_12","value":"adaka"}]}}
+2024-10-23 16:10:24,177 - DEBUG - page.on_event_async: page change [{"i":"_12","value":"adaka"}]
+2024-10-23 16:10:24,178 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_12","value":"adakah"}]}}
+2024-10-23 16:10:24,178 - DEBUG - page.on_event_async: page change [{"i":"_12","value":"adakah"}]
+2024-10-23 16:10:24,184 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_12","value":"adakahj"}]}}
+2024-10-23 16:10:24,185 - DEBUG - page.on_event_async: page change [{"i":"_12","value":"adakahj"}]
+2024-10-23 16:10:24,246 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_12","value":"adakahjb"}]}}
+2024-10-23 16:10:24,246 - DEBUG - page.on_event_async: page change [{"i":"_12","value":"adakahjb"}]
+2024-10-23 16:10:24,285 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_12","value":"adakahjbd"}]}}
+2024-10-23 16:10:24,285 - DEBUG - page.on_event_async: page change [{"i":"_12","value":"adakahjbd"}]
+2024-10-23 16:10:24,337 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_12","value":"adakahjbdh"}]}}
+2024-10-23 16:10:24,337 - DEBUG - page.on_event_async: page change [{"i":"_12","value":"adakahjbdh"}]
+2024-10-23 16:10:24,360 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"_12","value":"adakahjbdhw"}]}}
+2024-10-23 16:10:24,361 - DEBUG - page.on_event_async: page change [{"i":"_12","value":"adakahjbdhw"}]
+2024-10-23 16:10:25,356 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_12","eventName":"blur","eventData":""}}
+2024-10-23 16:10:25,357 - DEBUG - page.on_event_async: _12 blur 
+2024-10-23 16:10:25,437 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_15","eventName":"click","eventData":""}}
+2024-10-23 16:10:25,439 - DEBUG - page.on_event_async: _15 click 
+2024-10-23 16:10:25,441 - DEBUG - _process_command: set ['_14'] {'visible': 'false'}
+2024-10-23 16:10:25,441 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"_14","visible":"false"}]}}]}
+2024-10-23 16:10:25,442 - DEBUG - sent to TCP: 130
+2024-10-23 16:10:25,446 - ERROR - Future exception was never retrieved
+future: <Future finished exception=TypeError("'>' not supported between instances of 'int' and 'str'")>
+Traceback (most recent call last):
+  File "C:\Users\zonzi\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zonzi\AppData\Local\Programs\Python\Python312\Lib\site-packages\flet_core\page.py", line 944, in wrapper
+    handler(*args)
+  File "c:\Users\zonzi\Documents\GitHub\AppBancaria\NewAccount.py", line 101, in verificaDati
+    aggiungiUtenteInfo(nome.value, cognome.value, 00.00)
+  File "c:\Users\zonzi\Documents\GitHub\AppBancaria\NewAccount.py", line 20, in aggiungiUtenteInfo
+    ultimo_id = max(user['id'] for user in dati) if dati else -1
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'int' and 'str'
+2024-10-23 16:10:28,015 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2024-10-23 16:10:28,015 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2024-10-23 16:10:28,028 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2024-10-23 16:10:28,029 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2024-10-23 16:10:28,395 - DEBUG - Flet View process 14688
+2024-10-23 16:10:28,397 - DEBUG - Closing connection...
+2024-10-23 16:10:28,397 - DEBUG - Disconnecting all pages...
+2024-10-23 16:10:28,397 - DEBUG - page.on_event_async: page disconnect 
+2024-10-23 16:10:28,397 - DEBUG - Shutting down thread pool...

@@ -1,5 +1,5 @@
 import json
-with open("C:\\Users\\Informatica\\Documents\\martini 4D\\AppBancaria-main\\AppBancaria-main\\CredenzialiAccounts.json", "r") as f:#"C:\\Users\\Informatica\\Documents\\martini 4D\\APPBANCARIA-MAIN\\CredenzialiAccounts.json"
+with open("CredenzialiAccounts.json", "r") as f:#"C:\\Users\\Informatica\\Documents\\martini 4D\\APPBANCARIA-MAIN\\CredenzialiAccounts.json"
       data = json.load(f)
 
 def verificaUtente(usernameIns, passwordIns):
