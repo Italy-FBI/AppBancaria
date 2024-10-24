@@ -40,5 +40,11 @@
         "nome": "marco",
         "cognome": "martini",
         "saldo": 0.0
+    },
+    {
+        "id": 7,
+        "nome": "andrea",
+        "cognome": "menghini",
+        "saldo": 0.0
     }
 ]
