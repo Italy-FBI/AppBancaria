@@ -6,12 +6,13 @@ from log import *
 def login(page: ft.Page):
     page.clean()
     def acceso(e):
+        credenzialiErrate.visible=False
         if verificaUtente(username.value, password.value):
             logging.info(f'Accesso effettuato come: {username.value}')
             from Home import homepage
             homepage(page)  # Chiama direttamente la funzione homepage
         else:
-            a.text = "Credenziali non valide"
+            credenzialiErrate.visible=True
             logging.error('Credenziali errate / Account non trovato')
             page.update()
 
@@ -20,6 +21,7 @@ def login(page: ft.Page):
         newAccount(page)
     a = ft.Text("Salve...")
     b = ft.Text("Esegui l'Accesso")
+    credenzialiErrate = ft.Text("*Credenziali non valide", color="red", visible=False)
     username = ft.TextField(label="Username")
     password = ft.TextField(label="Password", password=True)
     invio = ft.ElevatedButton("Invio", on_click=acceso)
@@ -45,7 +47,7 @@ def login(page: ft.Page):
     #impostazioni pagina
     page.theme_mode = ft.ThemeMode.SYSTEM
     page.title = "Login"
-    page.add(alignLabel, alignText, alignBottone,g,passaRegistrazione)
+    page.add(alignLabel, alignText, alignBottone,g,passaRegistrazione,credenzialiErrate)
     page.update()
 
 
