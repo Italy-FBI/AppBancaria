@@ -5,10 +5,7 @@ fatte da **NCULO**
 # requiments:
 - Python
 ## Installa Python:
-```bash
-compralo
-```
-
+### Puoi installarlo GRATUITAMENTE sul Microsoft Store o sul sito ufficiale [www.python.it](https://www.python.org/)
 - flet
 
 
