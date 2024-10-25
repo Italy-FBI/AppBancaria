@@ -1,6 +1,6 @@
 # Semplice APP per tenere conto dei tuoi risparmi in Py
 
-fatte da **NCULO**
+Semplice App dove puoi segnare i tuoi risparmi in cui puoi aggiungere del saldo o delle spese.
 
 # requiments:
 - Python
