@@ -10,6 +10,8 @@ fatte da **NCULO**
 
 
 ## Installa flet:
+#### Scrivi nel terminare in seguente comando: 
 ```bash
 pip install flet
 ```
+#### Se riscontri dei problemi vai sul sito ufficiale di flet https://flet.dev/
