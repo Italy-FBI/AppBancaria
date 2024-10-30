@@ -2,29 +2,31 @@ import flet as ft
 from PrendiInfo import *
 def homepage(page: ft.Page):
     page.clean()  # Pulisci la pagina attuale
+
+    def apriUser(e):
+        from PaginaUser import paginaUtente
+        paginaUtente(page)
+
+    def apriAggiungiImporto(e):
+        from AggiungiAccredito import aggiungiAccredito
+        aggiungiAccredito(page)
+
     saluto = ft.Text(f" Salve, {getNome()}")
     contoDisponibile = ft.Text(f"Saldo Disponibile: {getSaldo()} €")
+    bottoneTransazioni = ft.ElevatedButton("Visualizza le transazioni")
+    bottoneAggiungi = ft.ElevatedButton("Aggiungi accredito", on_click=apriAggiungiImporto)
+    bottoneSpesa = ft.ElevatedButton("Aggiungi spesa")
     
-    # imgProfilo = ft.Image(
-    #     src=f"#",
-    #     width=50,
-    #     height=50,
-    #     fit=ft.ImageFit.CONTAIN,
-    #     )
-    
-    # images = ft.Row(expand=1, wrap=False, scroll="always")
-
-    alignSaluto = ft.Column([
-        ft.Row(
-                controls=[saluto],
-                alignment=[ft.MainAxisAlignment.CENTER]
-            )])
-    ft.Column([
-        ft.Row(
-            controls=[contoDisponibile]
-        )
-    ])
-    page.add(alignSaluto)
+    bottoneUser = ft.IconButton(
+                    icon=ft.icons.ACCOUNT_CIRCLE,
+                    icon_color="blue400",
+                    icon_size=70,
+                    tooltip="Pause record",
+                    on_click=apriUser
+                )
+   
+    page.add(saluto,contoDisponibile,bottoneTransazioni,bottoneAggiungi,bottoneSpesa,bottoneUser)
 
     page.title = "Home"
     page.update()
+ft.app(target=homepage)

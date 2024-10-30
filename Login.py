@@ -20,7 +20,7 @@ def login(page: ft.Page):
         from NewAccount import newAccount
         newAccount(page)
     a = ft.Text("Salve...")
-    b = ft.Text("Esegui l'Accesso")
+    b = ft.Text("Esegui l'Accesso", color="lightblue")
     credenzialiErrate = ft.Text("*Credenziali non valide", color="red", visible=False)
     username = ft.TextField(label="Username")
     password = ft.TextField(label="Password", password=True)
